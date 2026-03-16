@@ -14,6 +14,7 @@ import collections
 from contextlib import contextmanager
 from distutils import log
 from setuptools import setup, Command
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 from cy_build import CyExtension as Extension, cy_build_ext as build_ext
 try:
     import cython
