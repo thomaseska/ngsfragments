@@ -55,7 +55,7 @@ h5py = "^3.8.0"
 loess = ">=2.1.2"
 pyarrow = "^21.0.0"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 pytest = "^5.2"
 
 [build-system]
@@ -70,7 +70,7 @@ requires = ["poetry-core>=1.0.0",
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.build]
-generate-setup-file = false
+generate-setup-file = true
 script = "build.py"
 
 [tool.cibuildwheel]
