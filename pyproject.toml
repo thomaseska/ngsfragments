@@ -67,10 +67,10 @@ requires = ["poetry-core>=1.0.0",
             "ailist>=2.1.7",
             "pysam>=0.22.0",
             "genome_info>=1.0.8"]
-build-backend = "poetry.core.masonry.api"
+build-backend = "setuptools.build_meta"
 
 [tool.poetry.build]
-generate-setup-file = true
+generate-setup-file = false
 script = "build.py"
 
 [tool.cibuildwheel]
